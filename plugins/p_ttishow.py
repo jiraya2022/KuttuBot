@@ -143,9 +143,6 @@ async def re_enable_chat(bot, message):
 @Client.on_message(filters.command('stats') & filters.incoming)
 async def get_ststs(bot, message):
     if message.from_user and message.from_user.id in ADMINS:
-        # rju = await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
-        # await asyncio.sleep(2)
-        # await rju.delete()
         total_users = await db.total_users_count()
         totl_chats = await db.total_chat_count()
         files = await Media.count_documents()
@@ -155,9 +152,6 @@ async def get_ststs(bot, message):
         free = get_size(free)
         await message.reply(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
     else:
-        # fool = await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
-        # await asyncio.sleep(3)
-        # await fool.delete()
         await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
 
 
