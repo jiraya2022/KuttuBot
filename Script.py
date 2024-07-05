@@ -1,13 +1,10 @@
 class script(object):
-    START_TXT = """👋🏻 Hᴇʟʟᴏ {}.
-𝖨𝗆 𝖺𝗇 𝖺𝗎𝗍𝗈 𝖿𝗂𝗅𝗍𝖾𝗋 𝖻𝗈𝗍 𝗐𝗁𝗂𝖼𝗁 𝖼𝖺𝗇 𝗉𝗋𝗈𝗏𝗂𝖽𝖾 𝗆𝗈𝗏𝗂𝖾𝗌 𝗂𝗇 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌. 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 𝖺𝗇𝖽 𝗉𝗋𝗈𝗆𝗈𝗍𝖾 𝗆𝖾 𝖺𝗌 𝖺𝖽𝗆𝗂𝗇 𝗍𝗈 𝗅𝖾𝗍 𝗆𝖾 𝗀𝖾𝗍 𝗂𝗇 𝖺𝖼𝗍𝗂𝗈𝗇.
-𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝗍𝗁𝖾 𝖧𝖾𝗅𝗉 𝖻𝗎𝗍𝗍𝗈𝗇 𝖿𝗈𝗋 𝖬𝗈𝗋𝖾...
+    START_TXT = """<b>Mʏ Nᴀᴍᴇ Is #Minato, I Cᴀɴ Pʀᴏᴠɪᴅᴇ 
+<a href='https://t.me/The_Happy_Hour_Hindi'>Mᴏᴠɪᴇs</a>, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ <a href='https://t.me/ThappyHour'>Yᴏᴜʀ Gʀᴏᴜᴘ
+</a> Aɴᴅ Eɴᴊᴏʏ.
 
-©️ Maintained By @im_goutham_josh"""
-    HELP_TXT = """
-    🙋🏻‍♂️   Hellooo  {} 🤓
-
-○ Available Commands
+ᴅᴇᴠʟᴏᴘᴇᴅ ʙʏ : <a href=https://t.me/The_Happy_Hours>The Happy Hour</a></b>"""
+    HELP_TXT = """○ Available Commands
      
  /start - Check I'm Alive..
  /status - Bot Status
@@ -15,84 +12,44 @@ class script(object):
  /id - User id
  /stats - Db status  
  /broadcast - Broadcast (owner only)
-
-○ Notice 📙:-
-
-○ Dont Spam Me...🙂
 """
     ABOUT_TXT = """<b>◎ Nᴀᴍᴇ: ᴋᴜᴛᴛᴜ ʙᴏᴛ™
-◎ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/wudixh13>Goutham SER</a>
+◎ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/MAster_Jiraya_Bot>Master Jiraya</a>
 ◎ Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 3
 ◎ Dᴀᴛᴀ Bᴀsᴇ: Mᴏɴɢᴏ DB
-◎ Bᴏᴛ Sᴇʀᴠᴇʀ: KoYeb</b>"""
-    SOURCE_TXT = """<b>NOTE:</b>
-- ᴋᴜᴛᴛᴜ ʙᴏᴛ™ is a open source project. 
-- Source - <ahref=https://github.com/GouthamSER>Click Here😂</a>
-
-<b>DEVS:</b>
-- <a href=https://t.me/wudixh1>Gᴏᴜᴛʜᴀᴍ Sᴇʀ🌈</a>"""
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
-- Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
-<b>NOTE:</b>
-1. This Bot should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
-
+◎ Bᴏᴛ Sᴇʀᴠᴇʀ: Heroku</b>"""
+    SOURCE_TXT = """Nai Duga...😘😘"""
+    MANUELFILTER_TXT = """
 <b>Commands and Usage:</b>
 • /filter - <code>add a filter in chat</code>
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    BUTTON_TXT = """Help: <b>Buttons</b>
-
-- Eva Maria Supports both url and alert inline buttons.
-
-<b>NOTE:</b>
+    BUTTON_TXT = """
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
 2. This Botsupports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
-
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/sources_cods)</code>
-
-<b>Alert buttons:</b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
-
-<b>NOTE:</b>
+"""
+    AUTOFILTER_TXT = """
 1. Make me the admin of your channel if it's private.
 2. make sure that your channel does not contains camrips, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
-    CONNECTION_TXT = """Help: <b>Connections</b>
-
+3. Forward the last message to me with quotes."""
+    CONNECTION_TXT = """
 - Used to connect bot to PM for managing filters 
 - it helps to avoid spamming in groups.
 
-<b>NOTE:</b>
 1. Only admins can add a connection.
 2. Send <code>/connect</code> for connecting me to ur PM
 
-<b>Commands and Usage:</b>
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
-
-<b>NOTE:</b>
-these are the extra features of Eva Maria
-
-<b>Commands and Usage:</b>
+    EXTRAMOD_TXT = """
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
-    ADMIN_TXT = """Help: <b>Admin mods</b>
-
-<b>NOTE:</b>
-This module only works for my admins
-
-<b>Commands and Usage:</b>
+    ADMIN_TXT = """
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
 • /delete - <code>to delete a specific file from db.</code>
@@ -114,28 +71,19 @@ Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
 """
-    RESULT_TXT="""Eᴅᴀᴀ Mᴏɴᴇʜ I Fᴏᴜɴᴅ Iɴ Mʏ Dʙ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}"""
+    RESULT_TXT="""Here are list of files"""
 
-    CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
-FɪʟᴇSɪᴢᴇ : {file_size}
-
-╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
-▫️<a href=https://t.me/wudixh> ᴇʟᴅᴏʀᴀᴅᴏ </a>
-╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>"""
+    CUSTOM_FILE_CAPTION = """<b><a href="https://t.me/ThappyHour">{COUSTAM_FILE_CAPTION}</a></b>"""
 
     
     RESTART_TXT = """
-<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ
-@im_goutham_josh</b>"""
+<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ</b>"""
     
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Name - {}
 """
-    SPOLL_NOT_FND="""Eᴅᴀᴀ Mᴏɴᴇʜ🤚🏻
-I couldn't find anything related to your request. 😵
-Try reading the instruction below 👇🏼
-    """
+    SPOLL_NOT_FND="""Plzzz Select True Name...✅"""
 #SPELL CHECK LANGUAGES TO KNOW callback
     ENG_SPELL="""Please Note Below📓
 1️⃣Ask in Correct Spelling
@@ -158,10 +106,9 @@ Try reading the instruction below 👇🏼
 3️⃣இந்த வடிவத்தில் கேளுங்கள் [திரைப்படத்தின் பெயர், ஆண்டு]
     """
 
-    CHK_MOV_ALRT="""♻️ Eᴅᴀᴀ Mᴏɴᴇʜ ᴄʜᴇᴄᴋɪɴɢ ꜰɪʟᴇ ᴏɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ... ♻️"""
+    CHK_MOV_ALRT="""♻️ ᴄʜᴇᴄᴋɪɴɢ ꜰɪʟᴇ ᴏɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ... ♻️"""
     
-    OLD_MES=""" Eᴅᴀᴀ Mᴏɴᴇʜ 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬🤔, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧"""
+    OLD_MES="""𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬🤔, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧"""
     
-    MOV_NT_FND="""<b>Eᴅᴀᴀ Mᴏɴᴇʜ Tʜɪs Mᴏᴠɪᴇ Is Nᴏᴛ Yᴇᴛ Rᴇᴀʟᴇsᴇᴅ Oʀ Aᴅᴅᴇᴅ Tᴏ DB</b>
-Report To ADMIN - @im_goutham_josh
+    MOV_NT_FND="""<b>Tʜɪs Mᴏᴠɪᴇ Is Nᴏᴛ Yᴇᴛ Rᴇᴀʟᴇsᴇᴅ Oʀ Aᴅᴅᴇᴅ Tᴏ DB</b>
 """
