@@ -1,9 +1,6 @@
 <p align="center">
   <img src="https://graph.org/file/d647cbbc75af39a864e7e.jpg" alt="ᴋᴜᴛᴛᴜ ʙᴏᴛ™ Logo">
 </p>
-<h1 align="center">
-  <b>ᴋᴜᴛᴛᴜ ʙᴏᴛ™</b>
-</h1>
 
 <details><summary>Deploy To Heroku</summary>
 <p>
