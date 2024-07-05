@@ -152,7 +152,7 @@ async def get_ststs(bot, message):
         free = get_size(free)
         await message.reply(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
     else:
-        await message.reply_sticker("CAACAgUAAxkBAAJ6sWaIF3z3NoPzvfCl1FRu4NVu051kAALmDgACNXm4V9XjBlXznY1wHgQ")
+        await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
 
 @Client.on_message(filters.command('repo') & filters.incoming)
 async def get_repo(bot, message):
