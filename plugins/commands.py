@@ -21,14 +21,11 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        buttons = [
-            [
-                InlineKeyboardButton('🤖 Movie𝚄𝚙𝚍𝚊𝚝𝚎𝚜', url='https://t.me/wudixh')
-            ],
-            [
-                InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            ]
-            ]
+        buttons = [[
+                        InlineKeyboardButton('The Happy Hour️ 🌿', url=f"http://t.me/The_Happy_Hours"),
+
+                        InlineKeyboardButton('The Happy Hour 🇮🇳', url=f'http://t.me/The_Happy_Hour_Hindi')
+                    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
         await asyncio.sleep(2) # 😢 https://github.com/GouthamSER/KuttuBot/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
@@ -42,16 +39,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🎉 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀 🎉', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('🛡️ ᴀʙᴏᴜᴛ', callback_data='about')
-        ]]
+                        InlineKeyboardButton('The Happy Hour️ 🌿', url=f"http://t.me/The_Happy_Hours"),
+
+                        InlineKeyboardButton('The Happy Hour 🇮🇳', url=f'http://t.me/The_Happy_Hour_Hindi')
+                    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         #add sticker loading then run 1 sec and dlt
-        m=await message.reply_sticker("CAACAgUAAxkBAAEMNShmVI6xlIcNJ_lKp26yYT-1AZ-7IAACBAADwSQxMYnlHW4Ls8gQNQQ") 
-        await asyncio.sleep(1)
-        await m.delete()
+        # m=await message.reply_sticker("CAACAgUAAxkBAAEMNShmVI6xlIcNJ_lKp26yYT-1AZ-7IAACBAADwSQxMYnlHW4Ls8gQNQQ") 
+        # await asyncio.sleep(1)
+        # await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -60,15 +56,15 @@ async def start(client, message):
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
-        try:
-            invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
-        except ChatAdminRequired:
-            logger.error("Make sure Bot is admin in Forcesub channel")
-            return
+        # try:
+        #     invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
+        # except ChatAdminRequired:
+        #     logger.error("Make sure Bot is admin in Forcesub channel")
+        #     return
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "The Happy Hour️ 🌿", url=f'http://t.me/The_Happy_Hours'
                 )
             ]
         ]
@@ -89,11 +85,10 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🎉 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀 🎉', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('🛡️ ᴀʙᴏᴜᴛ', callback_data='about')
-        ]]
+                        InlineKeyboardButton('The Happy Hour️ 🌿', url=f"http://t.me/The_Happy_Hours"),
+
+                        InlineKeyboardButton('The Happy Hour 🇮🇳', url=f'http://t.me/The_Happy_Hour_Hindi')
+                    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
