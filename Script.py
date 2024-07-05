@@ -73,7 +73,7 @@ Added By - {}
 """
     RESULT_TXT="""Here are list of files"""
 
-    CUSTOM_FILE_CAPTION = """<b><a href="https://t.me/ThappyHour">{COUSTAM_FILE_CAPTION}</a></b>"""
+    CUSTOM_FILE_CAPTION = """<b><a href="https://t.me/ThappyHour">{CUSTOM_FILE_CAPTION}</a></b>"""
 
     
     RESTART_TXT = """
