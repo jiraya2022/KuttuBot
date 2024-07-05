@@ -158,7 +158,7 @@ async def get_ststs(bot, message):
 @Client.on_message(filters.command('repo') & filters.incoming)
 async def get_repo(bot, message):
         m=await message.reply_sticker("CAACAgUAAxkBAAJ6rmaIFruIZyjUJJNorRfjL41YXeJ0AAL2EAACD_UBVE-GylxX2yxFHgQ")
-        await asyncio.sleep(3)
+        await asyncio.sleep(2)
         #await m.delete()
         await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
 
