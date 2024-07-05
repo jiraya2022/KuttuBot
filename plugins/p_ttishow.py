@@ -155,7 +155,7 @@ async def get_ststs(bot, message):
         await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
 
 @Client.on_message(filters.command('repo') & filters.incoming)
-async def get_ststs(bot, message):
+async def get_repo(bot, message):
         await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
 
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
