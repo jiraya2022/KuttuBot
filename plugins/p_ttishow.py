@@ -1,3 +1,4 @@
+import asyncio
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
@@ -158,7 +159,7 @@ async def get_ststs(bot, message):
 async def get_repo(bot, message):
         m=await message.reply_sticker("CAACAgUAAxkBAAJ6rmaIFruIZyjUJJNorRfjL41YXeJ0AAL2EAACD_UBVE-GylxX2yxFHgQ")
         await asyncio.sleep(3)
-        await m.delete()
+        #await m.delete()
         await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
 
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
