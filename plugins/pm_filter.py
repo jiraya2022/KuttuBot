@@ -613,9 +613,7 @@ async def advantage_spell_chok(client, msg):
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
                  InlineKeyboardButton('ENG', 'esp'),
-                 InlineKeyboardButton('MAL', 'msp'),
-                 InlineKeyboardButton('HIN', 'hsp'),
-                 InlineKeyboardButton('TAM', 'tsp')
+                 InlineKeyboardButton('HIN', 'hsp')
         ],[
                  InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")
              ]]
@@ -633,9 +631,7 @@ async def advantage_spell_chok(client, msg):
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
                  InlineKeyboardButton('ENG', 'esp'),
-                 InlineKeyboardButton('MAL', 'msp'),
-                 InlineKeyboardButton('HIN', 'hsp'),
-                 InlineKeyboardButton('TAM', 'tsp')
+                 InlineKeyboardButton('HIN', 'hsp')
         ],[
                  InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")
              ]]
