@@ -160,15 +160,9 @@ async def get_ststs(bot, message):
 
 @Client.on_message(filters.command('repo') & filters.incoming)
 async def get_repo(bot, message):
-        s=await message.reply("**Please Wait....❤️**")
+        s=await message.reply("**Please Wait....❤️\n\nSending Repo....🌿**")
         await asyncio.sleep(1)
         await s.delete()
-        j=await massage.reply("**Sending Repo....🌿**")
-        await asyncio.sleep(1)
-        await j.delete()
-        #await asyncio.sleep(1)
-        #m=await message.reply_sticker("CAACAgUAAxkBAAJ6rmaIFruIZyjUJJNorRfjL41YXeJ0AAL2EAACD_UBVE-GylxX2yxFHgQ")
-        #await asyncio.sleep(1)
         await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
 
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
