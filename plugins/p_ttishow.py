@@ -153,18 +153,19 @@ async def get_ststs(bot, message):
         free = get_size(free)
         await message.reply(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
     else:
-        await message.reply("**Featuring Stats....🎉**")
+        h=await message.reply("**Featuring Stats....🎉**")
         await asyncio.sleep(1)
+        await h.delete()
         await message.reply_sticker("CAACAgUAAxkBAAJ6pWaHwWYnAbntY-QcXyecimJuMPZsAALtEgAC_na5V5yAL4BK5WkCHgQ")
 
 @Client.on_message(filters.command('repo') & filters.incoming)
 async def get_repo(bot, message):
         s=await message.reply("**Please Wait....❤️**")
         await asyncio.sleep(1)
-        await delete(s)
+        await s.delete()
         j=await massage.reply("**Sending Repo....🌿**")
         await asyncio.sleep(1)
-        await delete(j)
+        await j.delete()
         #await asyncio.sleep(1)
         #m=await message.reply_sticker("CAACAgUAAxkBAAJ6rmaIFruIZyjUJJNorRfjL41YXeJ0AAL2EAACD_UBVE-GylxX2yxFHgQ")
         #await asyncio.sleep(1)
