@@ -26,6 +26,7 @@ python3 bot.py
 
 ## Commands
 ```
+ /start - 🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳start 🇮🇳🇮🇳🇮🇳
 • /logs - to get the rescent errors
 • /stats - to get status of files in db.
 * /filter - add manual filters
